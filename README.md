@@ -4,16 +4,55 @@ A production-grade backend application for secure task orchestration and user ma
 
 ## About
 
-This project showcases a fully-fledged REST API designed with enterprise-level practices in mind. Beyond basic CRUD operations, it implements secure authentication, role-based access control, and a clean architectural separation that scales with business requirements.
+This project serves as both a **real-world task management solution** and a **comprehensive educational reference** for building enterprise-grade REST APIs with Spring Boot.
 
-**Key Capabilities:**
-- User registration and JWT-based authentication
-- Role-based access control (RBAC) for tasks
-- Full task lifecycle management (create, read, update, toggle completion, delete)
-- Protection of user data through context-aware authorization
-- Interactive API documentation via Swagger/OpenAPI
+### Real-World Use Case
+The Task Management API powers team productivity workflows where users can:
+- Create, organize, and track tasks across projects
+- Securely authenticate and manage their task lists
+- Share task visibility with team members (extensible authorization model)
+- Maintain audit trails of task completion and modifications
 
-This is an ideal reference implementation for developers building Spring Boot applications with security, persistence, and professional frontend integration patterns.
+This architecture directly applies to applications like project management tools (Jira-lite), team collaboration platforms, and personal productivity apps that require secure user isolation and efficient task persistence.
+
+### Educational Value
+This codebase is designed for developers learning Spring Boot who want to understand:
+
+1. **Authentication & Authorization**
+   - JWT token generation and validation
+   - Stateless security without session storage
+   - Role-based access control (RBAC) patterns
+   - User context extraction from Spring Security
+
+2. **Layered Architecture Best Practices**
+   - Clear separation: Controllers → Services → Repositories
+   - Data Transfer Objects (DTOs) for request/response decoupling
+   - Entity mapping with Hibernate ORM
+   - Exception handling at application boundaries
+
+3. **REST API Design**
+   - RESTful endpoint conventions
+   - Proper HTTP methods and status codes
+   - Request validation and error responses
+   - API documentation with Swagger/OpenAPI
+
+4. **Database Design & ORM**
+   - Relational data modeling (User-Task relationship)
+   - JPA annotations and Hibernate configuration
+   - Query optimization with Spring Data JPA
+   - Transaction management in service layer
+
+5. **Security Implementation**
+   - Password encryption with bcrypt
+   - CORS configuration for frontend integration
+   - Protected endpoints with role-based checks
+   - Data isolation ensuring users only access their tasks
+
+### Who This Is For
+- **Intermediate Java developers** transitioning to Spring Boot
+- **Students** learning full-stack web application development
+- **Teams** building internal tools or MVPs requiring secure authentication
+- **Backend engineers** needing reference implementations of common patterns
 
 ## Visuals
 
