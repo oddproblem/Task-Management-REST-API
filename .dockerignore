@@ -1,0 +1,10 @@
+.git
+.gitignore
+.gitattributes
+.idea
+.vscode
+.mvn
+target
+*.md
+frontend
+ss
